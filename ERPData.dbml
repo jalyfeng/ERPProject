@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TestDevExpress" Class="ERPDataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.1.104;Initial Catalog=TestDevExpress;User ID=sa" SettingsObjectName="ERPProject.Properties.Settings" SettingsPropertyName="TestDevExpressConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Module" Member="Module">
+    <Type Name="Module">
+      <Column Name="Indx" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SystemID" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MpCode" Type="System.String" DbType="Char(18) NOT NULL" CanBeNull="false" />
+      <Column Name="MpName" Type="System.String" DbType="NChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MpParentCode" Type="System.String" DbType="Char(18) NOT NULL" CanBeNull="false" />
+      <Column Name="IsOPeration" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Url" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
